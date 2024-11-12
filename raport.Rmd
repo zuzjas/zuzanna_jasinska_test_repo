@@ -31,3 +31,19 @@ summary(results)
 wagee = 15*0.0088072
 wagee #=13,2108%
 ```
+
+# Kod2
+
+To jest kolejny kod
+
+```{r}
+data(ceosal1,package = 'wooldridge')
+View(ceosal1)
+results1<-lm(salary~roe,data=ceosal1)
+results2<-lm(salary~0+roe,data=ceosal1)
+results3<-lm(salary~1,data=ceosal1)
+plot(ceosal1$roe,ceosal1$salary, ylim=c(0,5000))
+abline(results1)
+abline(results2)
+abline(results3)
+```
