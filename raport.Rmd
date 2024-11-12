@@ -1,0 +1,33 @@
+---
+title: "raport"
+author: "Zuzanna Jasińska"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Kod
+
+To jest kod.
+
+```{r}
+data(wage2,package = 'wooldridge')
+View(wage2)
+
+mean(wage2$wage)
+mean(wage2$IQ)
+sd(wage2$IQ)
+
+results<-lm(wage~IQ,data=wage2)
+summary(results)
+wagee= 8.3031*15
+wagee
+
+results<-lm(lwage~IQ,data=wage2)
+summary(results)
+wagee = 15*0.0088072
+wagee #=13,2108%
+```
