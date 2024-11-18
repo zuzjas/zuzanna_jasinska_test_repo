@@ -1,0 +1,25 @@
+---
+title: "Nasz wykres"
+author: "Zuzanna Jasińska i Adam Lewandowski"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(repos = c(CRAN = "https://cran.rstudio.com"))
+```
+
+# Kod
+
+```{r mpg}
+install.packages("tidyverse")
+library(tidyverse)
+ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
+  geom_point() +
+  labs(title = "Wykres punktowy: hwy vs displ",
+       x = "Pojemność silnika (displ)",
+       y = "Autostradowy przebieg (hwy)",
+       color = "Typ napędu (drv)") +
+  theme_minimal()
+```
