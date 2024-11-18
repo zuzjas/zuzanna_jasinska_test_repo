@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Kod
 
-To jest kod.
+To jest kod. Ciekawy kod
 
 ```{r}
 data(wage2,package = 'wooldridge')
@@ -34,7 +34,7 @@ wagee #=13,2108%
 
 # Kod2
 
-To jest kolejny kod
+To jest kolejny kod. Data engineer by się nie powstydził.
 
 ```{r}
 data(ceosal1,package = 'wooldridge')
