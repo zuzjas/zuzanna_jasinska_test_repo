@@ -21,5 +21,5 @@ ggplot(mpg, aes(x = displ, y = hwy, color = drv)) +
        x = "Pojemność silnika (displ)",
        y = "Autostradowy przebieg (hwy)",
        color = "Typ napędu (drv)") +
-  theme_minimal()
+  theme_minimal(base_size = 20, base_family = "")
 ```
